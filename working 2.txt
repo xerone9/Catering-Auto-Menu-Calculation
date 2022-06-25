@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <link rel="stylesheet" href="style.css">
+  <div>
+    <h1> Desingn Your Own Menu</h1>
+  </div>
+
+  <div class="container-1"> 
+    <div class="box-1">       
+    <h2>No. Of Persons.</h2>          
+    <input type="int" name="persons" allign="center" id="persons">
+    </div>      
+    <div class="box-1"> 
+    <h2>Budget.</h2>         
+      <input type="int" name="budget" allign="center" id="budget">          
+    </div>
+  </div>
+
+  <div class="container-1">
+    <div class="box-1">  
+      <form action="/actions.php">
+        <h2>What would you like from Rice?</h2>   
+        <input type="checkbox" name="rice" value="Biryani" id="biryani"> Biryani   
+        <br>       
+        <input type="checkbox" name="rice" value="Pulao" id="pulao"> Pulao   
+        <br>       
+        <input type="checkbox" name="rice" value="Chinese Rice With Shashlik" id="riceWithShashlik"> Chinese Rice With Shashlik
+        <br>       
+        <input type="checkbox" name="rice" value="Mix Vegetable Rice" id="mixVegetableRice"> Mix Vegetable Rice 
+        <br>       
+        <input type="checkbox" name="rice" value="Chicken Vegetable Rice" id="chickenVegetableRice"> Chicken Vegetable Rice 
+        <br>       
+        <input type="checkbox" name="rice" value="Chicken Manchurian" id="chickenManchurian"> Chicken Manchurian  
+        <br>       
+        <input type="checkbox" name="rice" value="Afghani Pulao" id="afghaniPulao"> Afghani Pulao  
+        <br>
+      </form> 
+      <form action="/actions.php">
+        <h2>What would you like from Curry?</h2>  
+        <input type="checkbox" name="curry" value="Mutton White Karahi   "> Mutton White Karahi 
+        <br>       
+        <input type="checkbox" name="curry" value="Chicken Handi"> Chicken Handi  
+        <br>       
+        <input type="checkbox" name="curry" value="Achar Gosht"> Achar Gosht  
+        <br>       
+        <input type="checkbox" name="curry" value="Qorma"> Qorma   
+        <br>       
+        <input type="checkbox" name="curry" value="Haleem"> Haleem   
+        <br>       
+        <input type="checkbox" name="curry" value="Palak Paneer"> Palak Paneer  
+        <br>       
+        <input type="checkbox" name="curry" value="Chicken Kofta"> Chicken Kofta  
+        <br>       
+        <input type="checkbox" name="curry" value="Kunna"> Kunna   
+        <br>
+      </form>
+      <form action="/actions.php">      
+        <h2>What would you like from BBQ items?</h2> 
+        <input type="checkbox" name="bbq" value="Chicken Bihari Boti"> Chicken Bihari Boti 
+        <br>       
+        <input type="checkbox" name="bbq" value="Seekh Kabab"> Seekh Kabab  
+        <br>       
+        <input type="checkbox" name="bbq" value="Chapli Kabab"> Chapli Kabab  
+        <br>       
+        <input type="checkbox" name="bbq" value="Chicken Reshmi Kabab"> Chicken Reshmi Kabab 
+        <br>       
+        <input type="checkbox" name="bbq" value="Chicken Malai Boti"> Chicken Malai Boti 
+        <br>       
+        <input type="checkbox" name="bbq" value="Chicken Steam Roast"> Chicken Steam Roast 
+        <br>       
+        <input type="checkbox" name="bbq" value="Gola Kabab"> Gola Kabab  
+        <br>       
+        <input type="checkbox" name="bbq" value="Chicken Tikka"> Chicken Tikka  
+        <br>  
+      </form>
+      <form action="/actions.php">      
+        <h2>What would you like from Sweat Dishes?</h2> 
+        <input type="checkbox" name="sweat" value="Lab-e-Shereen"> Lab-e-Shereen   
+        <br>       
+        <input type="checkbox" name="sweat" value="Rabri Kheer"> Rabri Kheer  
+        <br>       
+        <input type="checkbox" name="sweat" value="Cream Caramel"> Cream Caramel  
+        <br>       
+        <input type="checkbox" name="sweat" value="Cherry Crunch"> Cherry Crunch  
+        <br>       
+        <input type="checkbox" name="sweat" value="Cream Cocktail"> Cream Cocktail  
+        <br>       
+        <input type="checkbox" name="sweat" value="Doodh Dulari"> Doodh Dulari  
+        <br>       
+        <input type="checkbox" name="sweat" value="Zarda"> Zarda   
+        <br>       
+        <input type="checkbox" name="sweat" value="Gajar Ka Halwa"> Gajar Ka Halwa 
+        <br>       
+        <input type="checkbox" name="sweat" value="Loki Ka Halwa"> Loki Ka Halwa 
+        <br>       
+        <input type="checkbox" name="sweat" value="Gulab Jamun"> Gulab Jamun  
+        <br>       
+        <input type="checkbox" name="sweat" value="Desert Bar"> Desert Bar  
+        <br>       
+        <input type="checkbox" name="sweat" value="Ice Cream"> Ice Cream  
+        <br>       
+        <input type="checkbox" name="sweat" value="Cake"> Cake   
+        <br>       
+        <input type="checkbox" name="sweat" value="Ras Malai"> Ras Malai  
+        <br>       
+        <input type="checkbox" name="sweat" value="Dahi Bade (Sweat)"> Dahi Bade (Sweat) 
+        <br>
+      </form>
+      <form action="/actions.php">        
+        <h2>What would you like from Side Items?</h2> 
+        <input type="checkbox" name="side" value="Wong Tong"> Wong Tong  
+        <br>       
+        <input type="checkbox" name="side" value="Finger Fish"> Finger Fish  
+        <br>       
+        <input type="checkbox" name="side" value="Prawns"> Prawns   
+        <br>       
+        <input type="checkbox" name="side" value="Samosa"> Samosa   
+        <br>       
+        <input type="checkbox" name="side" value="Spring Roll"> Spring Roll  
+        <br>       
+        <input type="checkbox" name="side" value="Chimichanga"> Chimichanga   
+        <br>       
+        <input type="checkbox" name="side" value="Cheese Roll"> Cheese Roll  
+        <br>       
+        <input type="checkbox" name="side" value="Kachori with Tarkari   "> Kachori with Tarkari 
+        <br>       
+        <input type="checkbox" name="side" value="Roti"> Roti   
+        <br>       
+        <input type="checkbox" name="side" value="Puri Paratha"> Puri Paratha  
+        <br>       
+        <input type="checkbox" name="side" value="Corn Soup"> Corn Soup  
+        <br>       
+        <input type="checkbox" name="side" value="Chana Chaat"> Chana Chaat  
+        <br>       
+        <input type="checkbox" name="side" value="Maal Pura"> Maal Pura  
+        <br>       
+        <input type="checkbox" name="side" value="Pani Puri"> Pani Puri  
+        <br>       
+        <input type="checkbox" name="side" value="Russina Salad Platter   "> Russina Salad Platter 
+        <br>       
+        <input type="checkbox" name="side" value="Raita"> Raita   
+        <br>       
+        <input type="checkbox" name="side" value="Tea"> Tea   
+        <br>       
+        <input type="checkbox" name="side" value="Coffee"> Coffee   
+        <br>       
+        <input type="checkbox" name="side" value="Cold Drinks"> Cold Drinks  
+        <br>       
+        <input type="checkbox" name="side" value="Pan Stall"> Pan Stall  
+        <br>       
+        <br>
+      </form>
+        <input type="button" onclick="myFunction()" name="order" value="order" > 
+    </div>
+    <div class=box-2>  
+      <h2>Your Menu</h2>       
+      <input type="text" id="order" rows="5" size="50" style="height:0px;width:0px;" hidden> 
+      <h3 class="joining" id="item1"></h3> 
+      <h3 class="joining" id="item2"></h3> 
+      <h3 class="joining" id="item3"></h3> 
+      <h3 class="joining" id="item4"></h3> 
+      <h3 class="joining" id="item5"></h3> 
+      <h3 class="joining" id="item6"></h3> 
+      <h3 class="joining" id="item7"></h3> 
+      <h3 class="joining" id="item8"></h3> 
+      <h3 class="joining" id="item9"></h3> 
+      <h3 class="joining" id="item10"></h3> 
+      <h3 class="joining" id="item11"></h3> 
+      <h3 class="joining" id="item12"></h3> 
+      <h3 class="joining" id="item13"></h3> 
+      <h3 class="joining" id="item14"></h3> 
+      <h3 class="joining" id="item15"></h3> 
+      <h3 class="joining" id="item16"></h3> 
+      <h3 class="joining" id="item17"></h3> 
+      <h3 class="joining" id="item18"></h3> 
+      <h3 class="joining" id="item19"></h3> 
+      <h3 class="joining" id="item20"></h3> 
+      <h3 class="joining" id="item21"></h3> 
+      <h3 class="joining" id="item22"></h3> 
+      <h3 class="joining" id="item23"></h3> 
+      <h3 class="joining" id="item24"></h3> 
+      <h3 class="joining" id="item25"></h3> 
+      <h3 class="joining" id="item26"></h3> 
+      <h3 class="joining" id="item27"></h3> 
+      <h3 class="joining" id="item28"></h3> 
+      <h3 class="joining" id="item29"></h3> 
+      <h3 class="joining" id="item30"></h3>
+     
+    </div>
+    <div class=box-3>  
+      <h2>Calculation</h2>
+      <hr>
+      <h3>No. Of Persons.</h3>
+      <h4 id="calOfPersons"></h4>       
+      <!-- <input type="text" id="calOfPersons" size="50" style="height:20px;width:65px;">   -->
+      <h3>Budget</h3>
+      <h4 id="calBudget"></h4>       
+      <!-- <input type="text" id="calBudget" size="50" style="height:20px;width:65px;"> -->
+      <hr>
+      <h3>Your Order</h3>       
+      <h4 id="calItem1"></h4> 
+      <h4 id="calItem2"></h4> 
+      <h4 id="calItem3"></h4> 
+      <h4 id="calItem4"></h4> 
+      <h4 id="calItem5"></h4> 
+      <h4 id="calItem6"></h4> 
+      <h4 id="calItem7"></h4> 
+      <h4 id="calItem8"></h4> 
+      <h4 id="calItem9"></h4> 
+      <h4 id="calItem10"></h4> 
+      <h4 id="calItem11"></h4> 
+      <h4 id="calItem12"></h4> 
+      <h4 id="calItem13"></h4> 
+      <h4 id="calItem14"></h4> 
+      <h4 id="calItem15"></h4> 
+      <h4 id="calItem16"></h4> 
+      <h4 id="calItem17"></h4> 
+      <h4 id="calItem18"></h4> 
+      <h4 id="calItem19"></h4> 
+      <h4 id="calItem20"></h4> 
+      <h4 id="calItem21"></h4> 
+      <h4 id="calItem22"></h4> 
+      <h4 id="calItem23"></h4> 
+      <h4 id="calItem24"></h4> 
+      <h4 id="calItem25"></h4> 
+      <h4 id="calItem26"></h4> 
+      <h4 id="calItem27"></h4> 
+      <h4 id="calItem28"></h4> 
+      <h4 id="calItem29"></h4> 
+      <h4 id="calItem30"></h4>
+      <hr>
+  <div class="container-0">
+    <div class=box-3> 
+      <h3 class="totalHeading" id="test">Total</h3> 
+    </div>
+    <div class=box-3>
+      <h4 class="total" id="calTotal"></h4> 
+    </div>
+  </div>
+      
+      
+    </div>
+  </div>  
+
+      
+          <script>
+            function myFunction() {
+              document.getElementById("calBudget").innerHTML = document.getElementById("budget").value;
+              document.getElementById("calOfPersons").innerHTML = document.getElementById("persons").value;
+              var persons = document.getElementById("persons").value;
+              
+              var txt = "";
+              var i;
+              var j = 0;
+              var k = 0;
+              var menuItem = [];
+              var menuCart = [];
+              grandTotal = 0;
+              
+              riceMultiplier = persons/6;
+
+
+              biryaniRate = 1100;
+              pulaoRate = 1100;
+              riceWithShashlikRate = 1100;
+              mixVegetableRiceRate = 1100;
+              chickenVegetableRiceRate = 1100;
+              chickenManchurianRate = 1100;
+              afghaniPulaoRate = 1100;
+              
+              var biryani = document.getElementById('biryani');
+              var pulao = document.getElementById('pulao');
+
+
+              if(document.getElementById('biryani').checked) {                                              
+                  // txt = txt + rice[i].value; 
+                  j += 1;
+                  console.log(j)
+                  // document.getElementById("item" + j).innerHTML = j + "- " + rice.value;                 
+                  // document.getElementById("calItem" + j).innerHTML = j + "- " + rice.value + " (kg: " + parseInt(riceMultiplier) + ") Total: " + parseInt(riceMultiplier * rate) + " Rs." ;
+                  var item = biryani.value;                 
+                  var cart = biryani.value + " (kg: " + parseInt(riceMultiplier) + ") Total: " + parseInt(riceMultiplier * biryaniRate) + " Rs." ;                  
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  
+                  // document.getElementById("item" + j).innerHTML = k;                 
+                  // document.getElementById("calItem" + j).innerHTML = m;
+                  grandTotal += parseInt(riceMultiplier * biryaniRate);                                   
+              }
+                
+
+              if(document.getElementById('pulao').checked) {
+                  var item = pulao.value;                 
+                  var cart = pulao.value + " (kg: " + parseInt(riceMultiplier) + ") Total: " + parseInt(riceMultiplier * pulaoRate) + " Rs." ;                  
+                  menuItem.push(item);
+                  menuCart.push(cart);                  
+                  grandTotal += parseInt(riceMultiplier * pulaoRate);                  
+              }                
+                
+                if(document.getElementById('riceWithShashlik').checked) {                               
+                  var item = riceWithShashlik.value;                 
+                  var cart = riceWithShashlik.value + " (kg: " + parseInt(riceMultiplier) + ") Total: " + parseInt(riceMultiplier * riceWithShashlikRate) + " Rs." ;                  
+                  menuItem.push(item);
+                  menuCart.push(cart);                  
+                  grandTotal += parseInt(riceMultiplier * riceWithShashlikRate);                  
+              }
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              
+              // else if(document.getElementById('gender_Male').checked = false) {                    
+              //     j = 1; 
+              //     consle.log(j)               
+              //     var menu = "hidden";
+              //     document.getElementById("calItem1"  ).innerHTML = "hidden";
+              //     grandTotal += 0;
+              //     j -= 1;
+              // }
+              var curry = document.forms[1];
+              for (i = 0; i < curry.length; ++i) {
+                rate = 900;
+                curryMultiplier = document.getElementById("persons").value / 6;
+                if (curry[i].checked) {
+                  // txt = txt + rice[i].value; 
+                  j += 1;
+                  document.getElementById("item" + j).innerHTML = j + "- " + curry[i].value;
+                  document.getElementById("calItem" + j).innerHTML = j + "- " + curry[i].value + " (kg: " + parseInt(curryMultiplier) + ") Total: " + parseInt(curryMultiplier * rate) + " Rs." ;
+                  grandTotal += parseInt(curryMultiplier * rate);                
+                } 
+
+              }
+
+              var bbq = document.forms[2];   
+              for (i = 0; i < bbq.length; ++i) {
+                rate = 820;
+                bbqMultiplier = document.getElementById("persons").value / 6;
+                if (bbq[i].checked) {
+                  // txt = txt + rice[i].value; 
+                  j += 1;
+                  document.getElementById("item" + j).innerHTML = j + "- " + bbq[i].value;
+                  document.getElementById("calItem" + j).innerHTML = j + "- " + bbq[i].value + " (kg: " + parseInt(bbqMultiplier) + ") Total: " + parseInt(bbqMultiplier * rate) + " Rs." ;  
+                  grandTotal += parseInt(bbqMultiplier * rate);                
+                }                
+              }               
+              
+              var sweat = document.forms[3];   
+              for (i = 0; i < sweat.length; ++i) {               
+                rate = 820;
+                sweatMultiplier = document.getElementById("persons").value / 6;
+                if (sweat[i].checked) {
+                  // txt = txt + rice[i].value; 
+                  j += 1;
+                  document.getElementById("item" + j).innerHTML = j + "- " + sweat[i].value;
+                  document.getElementById("calItem" + j).innerHTML = j + "- " + sweat[i].value + " (kg: " + parseInt(sweatMultiplier) + ") Total: " + parseInt(sweatMultiplier * rate) + " Rs." ;  
+                  grandTotal += parseInt(sweatMultiplier * rate);                
+                }                
+              }         
+
+              var side = document.forms[4];   
+              for (i = 0; i < side.length; ++i) {
+                console.log(side)
+                rate = 820;
+                sideMultiplier = document.getElementById("persons").value * 1;
+                if (side[i].checked) {
+                  // txt = txt + rice[i].value; 
+                  j += 1;
+                  document.getElementById("item" + j).innerHTML = j + "- " + side[i].value;
+                  document.getElementById("calItem" + j).innerHTML = j + "- " + side[i].value + " (per Peice: " + parseInt(sideMultiplier) + ") Total: " + parseInt(sideMultiplier * rate) + " Rs." ;  
+                  grandTotal += parseInt(sideMultiplier * rate);                
+                }                
+              }  
+              
+              reset = 31;
+              for (i = 1; i < reset; ++i) {
+                document.getElementById("item" + i).innerHTML = null;
+                document.getElementById("calItem" + i).innerHTML = null;
+              }
+
+              var serial = 0;
+              var x =  grandTotal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");   
+              document.getElementById("calTotal").innerHTML = x + "/-";
+              menuItem.forEach(function (item, index) {
+                serial = serial + 1;
+                document.getElementById("item" + serial).innerHTML = (index+1) + "- " + item; 
+                console.log(item, index);
+              });
+              menuCart.forEach(function (item, index) {
+                serial = serial + 1;
+                document.getElementById("calItem" + serial).innerHTML = (index+1) + "- " + item; 
+                console.log(item, index);
+              });
+              // if (k.length > 1){
+              // document.getElementById("item" + j).innerHTML = k;                 
+              // document.getElementById("calItem" + j).innerHTML = m;
+              // }
+              // else {
+              // document.getElementById("item1").innerHTML = null;                 
+              // document.getElementById("calItem1").innerHTML = null;
+              // }
+            }
+            </script>
+<!-- <script>
+var btn = document.querySelector("[name='order']");
+//console.log(btn);
+setInterval(function(){
+btn.click();
+},500);
+</script>         -->
+</body>
+</html>

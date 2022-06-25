@@ -1,0 +1,1552 @@
+<!DOCTYPE html>
+<html>
+ 
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    body {font-family: Arial, Helvetica, sans-serif;}
+    
+    /* The Modal (background) */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+    
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <button id="myBtn" hidden>Open Modal</button>
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">    
+      <!-- Modal content -->
+      <div class="modal-content">
+        
+        <form name="f1" onsubmit="return validateForm()">
+          <div>
+            <img src="staticLogo.png" width="220" height="65"/>
+            <hr>
+            <h1 class="joining"> Real Time Pirce Update</h1> 
+          </div>
+          <div>
+            <input type="int" class="input" id="persons"placeholder="No. Of Persons">
+          </div>
+          <div class="form-group">
+            <input type="int" class="input" id="budget" placeholder="Budget" data-bs-dismiss="myModal">
+          </div>
+          <!-- <button type="button" class="btn btn-info btn-block btn-round" onclick="otherFunctin()" action="/actions.php">Go -></button> -->
+          <br>
+          <span type="button" class="close" onclick="otherFunction()" id="close">Go</span>
+          <!-- <input type="button" onclick="otherFunction()" name="grand" value="Go" id="close"> -->
+          <!-- <a id="closemodal" href="https://www.google.com" class="btn btn-primary close" data-dismiss="modal" target="_blank">Launch google.com</a> -->
+        </form>
+      </div>
+    
+    </div>
+    
+    
+       
+    <script>
+    
+      
+        
+      
+    // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    
+    //var span = 0;
+    // if (document.getElementById("persons") != null) {
+    //   console.log(getElementById("persons").value)
+    // }
+    
+    
+      
+   
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "block";
+      }
+    }
+    
+    
+    </script>
+    
+    </body>
+    
+
+
+  
+<body>
+    <link rel="stylesheet" href="style.css">
+    <header class="header">
+          <img src="Logo GIF.gif" width="300" height="80" allign="center"/> 
+        </header>
+  <div>
+    <h1 class="demo-1"> Desingn Your Own Menu</h1>    
+  </div>
+
+  
+
+  <div class="container-1">
+    <div class="box-1">  
+      <form action="/actions.php">
+        <h2>What would you like from Rice?</h2>   
+        <input type="checkbox" name="rice" value="Beef Biryani" id="beefBiryani"> Beef Biryani   
+        <br> 
+        <input type="checkbox" name="rice" value="Chicken Biryani" id="chickenBiryani"> Chicken Biryani   
+        <br>      
+        <input type="checkbox" name="rice" value="Pulao" id="pulao"> Pulao   
+        <br>       
+        <input type="checkbox" name="rice" value="Chinese Rice With Shashlik" id="riceWithShashlik"> Chinese Rice With Shashlik
+        <br>       
+        <input type="checkbox" name="rice" value="Mix Vegetable Rice" id="mixVegetableRice"> Mix Vegetable Rice 
+        <br>       
+        <input type="checkbox" name="rice" value="Chicken Vegetable Rice" id="chickenVegetableRice"> Chicken Vegetable Rice 
+        <br>       
+        <input type="checkbox" name="rice" value="Chicken Manchurian" id="chickenManchurian"> Chicken Manchurian  
+        <br>       
+        <input type="checkbox" name="rice" value="Afghani Pulao" id="afghaniPulao"> Afghani Pulao  
+        <br>
+      </form> 
+      <form action="/actions.php">
+        <h2>What would you like from Curry?</h2>  
+        <input type="checkbox" name="curry" value="Mutton White Karahi" id="muttonWhiteKarahi"> Mutton White Karahi 
+        <br>
+        <input type="checkbox" name="curry" value="Chicken White Karahi" id="chickenWhiteKarahi"> Chicken White Karahi 
+        <br>       
+        <input type="checkbox" name="curry" value="Chicken Handi" id="chickenHandi"> Chicken Handi  
+        <br>       
+        <input type="checkbox" name="curry" value="Achar Gosht" id="acharGosht"> Achar Gosht  
+        <br>       
+        <input type="checkbox" name="curry" value="Qorma" id="qorma"> Qorma   
+        <br>       
+        <input type="checkbox" name="curry" value="Haleem" id="haleem"> Haleem   
+        <br>       
+        <input type="checkbox" name="curry" value="Palak Paneer" id="palakPaneer"> Palak Paneer  
+        <br>       
+        <input type="checkbox" name="curry" value="Chicken Kofta" id="chickenKofta"> Chicken Kofta  
+        <br>       
+        <input type="checkbox" name="curry" value="Kunna" id="kunna"> Kunna   
+        <br>
+      </form>
+      <form action="/actions.php">      
+        <h2>What would you like from BBQ items?</h2> 
+        <input type="checkbox" name="bbq" value="Chicken Bihari Boti" id="chickenBihariBoti"> Chicken Bihari Boti 
+        <br>       
+        <input type="checkbox" name="bbq" value="Seekh Kabab" id="seekhKabab"> Seekh Kabab  
+        <br>       
+        <input type="checkbox" name="bbq" value="Chapli Kabab" id="chapliKabab"> Chapli Kabab  
+        <br>       
+        <input type="checkbox" name="bbq" value="Chicken Reshmi Kabab" id="chickenReshmiKabab"> Chicken Reshmi Kabab 
+        <br>       
+        <input type="checkbox" name="bbq" value="Chicken Malai Boti" id="chickenMalaiBoti"> Chicken Malai Boti 
+        <br>       
+        <input type="checkbox" name="bbq" value="Chicken Steam Roast" id="chickenSteamRoast"> Chicken Steam Roast 
+        <br>       
+        <input type="checkbox" name="bbq" value="Gola Kabab" id="golaKabab"> Gola Kabab  
+        <br>       
+        <input type="checkbox" name="bbq" value="Chicken Tikka" id="chickenTikka"> Chicken Tikka  
+        <br>  
+      </form>
+      <form action="/actions.php">      
+        <h2>What would you like from Sweat Dishes?</h2> 
+        <input type="checkbox" name="sweat" value="Lab-e-Shereen" id="labEShereen"> Lab-e-Shereen   
+        <br>       
+        <input type="checkbox" name="sweat" value="Rabri Kheer" id="rabriKheer"> Rabri Kheer  
+        <br>       
+        <input type="checkbox" name="sweat" value="Cream Caramel" id="creamCaramel"> Cream Caramel  
+        <br>       
+        <input type="checkbox" name="sweat" value="Cherry Crunch" id="cherryCrunch"> Cherry Crunch  
+        <br>       
+        <input type="checkbox" name="sweat" value="Cream Cocktail" id="creamCocktail"> Cream Cocktail  
+        <br>       
+        <input type="checkbox" name="sweat" value="Doodh Dulari" id="doodhDulari"> Doodh Dulari  
+        <br>       
+        <input type="checkbox" name="sweat" value="Zarda" id="zarda"> Zarda   
+        <br>       
+        <input type="checkbox" name="sweat" value="Gajar Ka Halwa" id="gajarKaHalwa"> Gajar Ka Halwa 
+        <br>       
+        <input type="checkbox" name="sweat" value="Loki Ka Halwa" id="lokiKaHalwa"> Loki Ka Halwa 
+        <br>       
+        <input type="checkbox" name="sweat" value="Gulab Jamun" id="gulabJamun"> Gulab Jamun  
+        <br>       
+        <input type="checkbox" name="sweat" value="Desert Bar" id="desertBar"> Desert Bar  
+        <br>       
+        <input type="checkbox" name="sweat" value="Ice Cream" id="iceCream"> Ice Cream  
+        <br>       
+        <input type="checkbox" name="sweat" value="Cake" id="cake"> Cake   
+        <br>       
+        <input type="checkbox" name="sweat" value="Ras Malai" id="rasMalai"> Ras Malai  
+        <br>       
+        <input type="checkbox" name="sweat" value="Dahi Bade (Sweat)" id="dahiBadeSweat"> Dahi Bade (Sweat) 
+        <br>
+      </form>
+      <form action="/actions.php">        
+        <h2>What would you like from Side Items?</h2> 
+        <input type="checkbox" name="side" value="Wong Tong" id="wongTong"> Wong Tong  
+        <br>       
+        <input type="checkbox" name="side" value="Finger Fish" id="fingerFish"> Finger Fish  
+        <br>       
+        <input type="checkbox" name="side" value="Prawns" id="prawns"> Prawns   
+        <br>       
+        <input type="checkbox" name="side" value="Samosa" id="samosa"> Samosa   
+        <br>       
+        <input type="checkbox" name="side" value="Spring Roll" id="springRoll"> Spring Roll  
+        <br>       
+        <input type="checkbox" name="side" value="Chimichanga" id="Chimichanga"> Chimichanga   
+        <br>       
+        <input type="checkbox" name="side" value="Cheese Roll" id="cheeseRoll"> Cheese Roll  
+        <br>       
+        <input type="checkbox" name="side" value="Kachori with Tarkari" id="kachoriWithTarkari"> Kachori with Tarkari 
+        <br>       
+        <input type="checkbox" name="side" value="Roti" id="roti"> Roti   
+        <br>
+        <input type="checkbox" name="side" value="Taftaan" id="taftaan"> Taftaan   
+        <br>       
+        <input type="checkbox" name="side" value="Puri Paratha" id="puriParatha"> Puri Paratha  
+        <br>       
+        <input type="checkbox" name="side" value="Corn Soup" id="cornSoup"> Corn Soup  
+        <br>       
+        <input type="checkbox" name="side" value="Chana Chaat" id="chanaChaat"> Chana Chaat  
+        <br>       
+        <input type="checkbox" name="side" value="Maal Pura" id="maalPura"> Maal Pura  
+        <br>       
+        <input type="checkbox" name="side" value="Pani Puri" id="paniPuri"> Pani Puri  
+        <br>       
+        <input type="checkbox" name="side" value="Russina Salad Platter" id="russianSaladPlatter"> Russina Salad Platter 
+        <br> 
+        <input type="checkbox" name="side" value="Salad Bar" id="saladBar"> Salad Bar 
+        <br>       
+        <input type="checkbox" name="side" value="Raita" id="raita"> Raita   
+        <br>       
+        <input type="checkbox" name="side" value="Tea" id="tea"> Tea   
+        <br>       
+        <input type="checkbox" name="side" value="Coffee" id="coffee"> Coffee   
+        <br>       
+        <input type="checkbox" name="side" value="Cold Drinks" id="coldDrinks"> Cold Drinks  
+        <br>       
+        <input type="checkbox" name="side" value="Pan Stall" id="panStall"> Pan Stall  
+        <br>       
+        <br>
+      </form>
+        <input type="button" onclick="myFunction()" name="order" value="order" hidden> 
+    </div>
+    <div class=box-2>  
+      <h2 class="h7">-: Your Menu :-</h2>       
+      <input type="text" id="order" rows="5" size="50" style="height:0px;width:0px;" hidden> 
+      <h3 class="joining" id="item1"></h3> 
+      <h3 class="joining" id="item2"></h3> 
+      <h3 class="joining" id="item3"></h3> 
+      <h3 class="joining" id="item4"></h3> 
+      <h3 class="joining" id="item5"></h3> 
+      <h3 class="joining" id="item6"></h3> 
+      <h3 class="joining" id="item7"></h3> 
+      <h3 class="joining" id="item8"></h3> 
+      <h3 class="joining" id="item9"></h3> 
+      <h3 class="joining" id="item10"></h3> 
+      <h3 class="joining" id="item11"></h3> 
+      <h3 class="joining" id="item12"></h3> 
+      <h3 class="joining" id="item13"></h3> 
+      <h3 class="joining" id="item14"></h3> 
+      <h3 class="joining" id="item15"></h3> 
+      <h3 class="joining" id="item16"></h3> 
+      <h3 class="joining" id="item17"></h3> 
+      <h3 class="joining" id="item18"></h3> 
+      <h3 class="joining" id="item19"></h3> 
+      <h3 class="joining" id="item20"></h3> 
+      <h3 class="joining" id="item21"></h3> 
+      <h3 class="joining" id="item22"></h3> 
+      <h3 class="joining" id="item23"></h3> 
+      <h3 class="joining" id="item24"></h3> 
+      <h3 class="joining" id="item25"></h3> 
+      <h3 class="joining" id="item26"></h3> 
+      <h3 class="joining" id="item27"></h3> 
+      <h3 class="joining" id="item28"></h3> 
+      <h3 class="joining" id="item29"></h3> 
+      <h3 class="joining" id="item30"></h3>
+     
+    </div>
+    
+    <div class=box-3>  
+      <h2 class="h7">Calculation</h2>
+      <hr>
+      <div class="container-0"> 
+        <div class=box-3>  
+      <h3>Persons</h3>
+    </div>
+
+        <div class=box-3> 
+      <h4 id="calOfPersons"></h4>
+    </div>
+</div>
+           
+<div class="container-0"> 
+    <div class=box-3>  
+      <h3>Budget</h3>
+    </div>
+        <div class=box-3> 
+      <h4 id="calBudget"></h4>  
+    </div>
+</div>     
+      <!-- <input type="text" id="calBudget" size="50" style="height:20px;width:65px;"> -->
+      <hr>
+   
+    
+
+      <div class=box-16>  
+        <h2 class="h7">Your Order</h2>
+        <hr>
+    </div>
+
+    
+
+
+
+ 
+  <div class="container-0">
+    <div class=box-11>  
+      <h4 id="calItemSerial0"></h4>
+    </div>
+    <div class=box-12>
+      <h4 id="calItem0"></h4> 
+    </div>
+    <div class=box-13>
+      <h4 id="calItemQuantity0"></h4>  
+    </div>
+    <div class=box-14>
+      <h4 id="calItemPrice0"></h4>
+    </div>
+</div>
+    <div class="container-1">
+    <div class=box-7>        
+      <h4 id="calItemSerial1"></h4> 
+      <h4 id="calItemSerial2"></h4> 
+      <h4 id="calItemSerial3"></h4> 
+      <h4 id="calItemSerial4"></h4> 
+      <h4 id="calItemSerial5"></h4> 
+      <h4 id="calItemSerial6"></h4> 
+      <h4 id="calItemSerial7"></h4> 
+      <h4 id="calItemSerial8"></h4> 
+      <h4 id="calItemSerial9"></h4> 
+      <h4 id="calItemSerial10"></h4> 
+      <h4 id="calItemSerial11"></h4> 
+      <h4 id="calItemSerial12"></h4> 
+      <h4 id="calItemSerial13"></h4> 
+      <h4 id="calItemSerial14"></h4> 
+      <h4 id="calItemSerial15"></h4> 
+      <h4 id="calItemSerial16"></h4> 
+      <h4 id="calItemSerial17"></h4> 
+      <h4 id="calItemSerial18"></h4> 
+      <h4 id="calItemSerial19"></h4> 
+      <h4 id="calItemSerial20"></h4> 
+      <h4 id="calItemSerial21"></h4> 
+      <h4 id="calItemSerial22"></h4> 
+      <h4 id="calItemSerial23"></h4> 
+      <h4 id="calItemSerial24"></h4> 
+      <h4 id="calItemSerial25"></h4> 
+      <h4 id="calItemSerial26"></h4> 
+      <h4 id="calItemSerial27"></h4> 
+      <h4 id="calItemSerial28"></h4> 
+      <h4 id="calItemSerial29"></h4> 
+      <h4 id="calItemSerial30"></h4> 
+    </div>
+    <div class=box-8>
+                   
+      <h4 id="calItem1"></h4> 
+      <h4 id="calItem2"></h4> 
+      <h4 id="calItem3"></h4> 
+      <h4 id="calItem4"></h4> 
+      <h4 id="calItem5"></h4> 
+      <h4 id="calItem6"></h4> 
+      <h4 id="calItem7"></h4> 
+      <h4 id="calItem8"></h4> 
+      <h4 id="calItem9"></h4> 
+      <h4 id="calItem10"></h4> 
+      <h4 id="calItem11"></h4> 
+      <h4 id="calItem12"></h4> 
+      <h4 id="calItem13"></h4> 
+      <h4 id="calItem14"></h4> 
+      <h4 id="calItem15"></h4> 
+      <h4 id="calItem16"></h4> 
+      <h4 id="calItem17"></h4> 
+      <h4 id="calItem18"></h4> 
+      <h4 id="calItem19"></h4> 
+      <h4 id="calItem20"></h4> 
+      <h4 id="calItem21"></h4> 
+      <h4 id="calItem22"></h4> 
+      <h4 id="calItem23"></h4> 
+      <h4 id="calItem24"></h4> 
+      <h4 id="calItem25"></h4> 
+      <h4 id="calItem26"></h4> 
+      <h4 id="calItem27"></h4> 
+      <h4 id="calItem28"></h4> 
+      <h4 id="calItem29"></h4> 
+      <h4 id="calItem30"></h4>      
+    </div>
+    <div class=box-9>
+        
+      <h4 id="calItemQuantity1"></h4> 
+      <h4 id="calItemQuantity2"></h4> 
+      <h4 id="calItemQuantity3"></h4> 
+      <h4 id="calItemQuantity4"></h4> 
+      <h4 id="calItemQuantity5"></h4> 
+      <h4 id="calItemQuantity6"></h4> 
+      <h4 id="calItemQuantity7"></h4> 
+      <h4 id="calItemQuantity8"></h4> 
+      <h4 id="calItemQuantity9"></h4> 
+      <h4 id="calItemQuantity10"></h4> 
+      <h4 id="calItemQuantity11"></h4> 
+      <h4 id="calItemQuantity12"></h4> 
+      <h4 id="calItemQuantity13"></h4> 
+      <h4 id="calItemQuantity14"></h4> 
+      <h4 id="calItemQuantity15"></h4> 
+      <h4 id="calItemQuantity16"></h4> 
+      <h4 id="calItemQuantity17"></h4> 
+      <h4 id="calItemQuantity18"></h4> 
+      <h4 id="calItemQuantity19"></h4> 
+      <h4 id="calItemQuantity20"></h4> 
+      <h4 id="calItemQuantity21"></h4> 
+      <h4 id="calItemQuantity22"></h4> 
+      <h4 id="calItemQuantity23"></h4> 
+      <h4 id="calItemQuantity24"></h4> 
+      <h4 id="calItemQuantity25"></h4> 
+      <h4 id="calItemQuantity26"></h4> 
+      <h4 id="calItemQuantity27"></h4> 
+      <h4 id="calItemQuantity28"></h4> 
+      <h4 id="calItemQuantity29"></h4> 
+      <h4 id="calItemQuantity30"></h4>      
+    </div>
+    <div class=box-10>
+              
+      <h4 id="calItemPrice1"></h4> 
+      <h4 id="calItemPrice2"></h4> 
+      <h4 id="calItemPrice3"></h4> 
+      <h4 id="calItemPrice4"></h4> 
+      <h4 id="calItemPrice5"></h4> 
+      <h4 id="calItemPrice6"></h4> 
+      <h4 id="calItemPrice7"></h4> 
+      <h4 id="calItemPrice8"></h4> 
+      <h4 id="calItemPrice9"></h4> 
+      <h4 id="calItemPrice10"></h4> 
+      <h4 id="calItemPrice11"></h4> 
+      <h4 id="calItemPrice12"></h4> 
+      <h4 id="calItemPrice13"></h4> 
+      <h4 id="calItemPrice14"></h4> 
+      <h4 id="calItemPrice15"></h4> 
+      <h4 id="calItemPrice16"></h4> 
+      <h4 id="calItemPrice17"></h4> 
+      <h4 id="calItemPrice18"></h4> 
+      <h4 id="calItemPrice19"></h4> 
+      <h4 id="calItemPrice20"></h4> 
+      <h4 id="calItemPrice21"></h4> 
+      <h4 id="calItemPrice22"></h4> 
+      <h4 id="calItemPrice23"></h4> 
+      <h4 id="calItemPrice24"></h4> 
+      <h4 id="calItemPrice25"></h4> 
+      <h4 id="calItemPrice26"></h4> 
+      <h4 id="calItemPrice27"></h4> 
+      <h4 id="calItemPrice28"></h4> 
+      <h4 id="calItemPrice29"></h4> 
+      <h4 id="calItemPrice30"></h4> 
+    </div>
+  </div>
+    
+  <div class="container-0">
+    <div class=box-3> 
+      <h3 class="totalHeading" id="test">Total</h3> 
+    </div>
+    <div class=box-3>
+      <h4 class="total" id="calTotal"></h4> 
+    </div>    
+  </div>
+  <div class="container-0">
+    <div class=box-4> 
+      <h3 class="h5" id="extraAmountHead">Total</h3> 
+    </div>
+    <div class=box-15>
+      <h3 class="h6" id="extraAmount"></h3> 
+    </div>    
+  
+  
+      
+      
+    </div>
+  </div>
+</div> 
+<header>
+  <!-- Content -->
+</header>
+
+<main>
+  <!-- Content -->
+</main>
+
+<footer class="footer">
+  <div class="footer__addr">
+    <img src="staticLogo.png" width="220" height="65"/>
+        
+    
+    <address>
+      
+          
+      <a class="footer__btn" href="mailto:order@caterers.rubick.org">Email Us</a>
+    </address>
+  </div>
+  
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">Catering</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="https://caterers.rubick.org/catering/">Home</a>
+        </li>
+
+        <li>
+          <a href="https://caterers.rubick.org/deals/">Deals</a>
+        </li>
+            
+        <li>
+          <a href="https://caterers.rubick.org/catalogue/">Catalogue</a>
+        </li>
+      </ul>
+    </li>
+    
+    <li class="nav__item">
+      <h2 class="nav__title">Event Management</h2>
+      
+      <ul class="nav__ul">
+        <li>
+          <a href="https://caterers.rubick.org/event/">Home</a>
+        </li>
+        
+        <li>
+          <a href="#">Deals</a>
+        </li>
+        
+        <li>
+          <a href="#">Catalogue</a>
+        </li>       
+        
+        
+        
+        
+        
+      </ul>
+    </li>
+    
+    <li class="nav__item">
+      <h2 class="nav__title">Photgraphy</h2>
+      
+      <ul class="nav__ul">
+        <li>
+          <a href="https://caterers.rubick.org/photography/">Home</a>
+        </li>
+        
+        <li>
+          <a href="#">Deals</a>
+        </li>
+        
+        <li>
+          <a href="#">Catalogue</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  
+  
+</footer>
+
+
+      
+          <script>
+            function myFunction() {
+              var budget = document.getElementById("budget").value;
+              var x =  budget.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");   
+              document.getElementById("calBudget").innerHTML = x + "/-";
+              document.getElementById("calOfPersons").innerHTML = document.getElementById("persons").value;
+              var persons = document.getElementById("persons").value;
+              var budget = document.getElementById("budget").value;
+              
+              var txt = "";
+              var i;
+              var j = 0;
+              var k = 0;
+              var menuItem = [];
+              var menuCart = [];
+              var cartKg = [];
+              var cartPrice = [];
+              grandTotal = 0;
+              
+              // Per Person Muliplier
+
+              riceMultiplier = persons/10;
+              curryMultiplier = persons/7.78;
+              singleMultiplier = persons * 2.285; 
+              sweatMultiplier = persons/8.75;
+              bbqMultiplier = persons/4.375;
+
+              coffeeMultiplier = persons*1.43;
+              rotiMultiplier = persons/14;
+              taftaanMultiplier = persons/17.5;
+              raitaMultiplier = persons/35;
+              saladBarMultiplier = persons/175;
+
+              // Rates...
+
+              // Rice
+
+              beefBiryaniRate = 1150;
+              chickenBiryaniRate = 950;
+              pulaoRate = 1100;
+              riceWithShashlikRate = 1100;
+              mixVegetableRiceRate = 1100;
+              chickenVegetableRiceRate = 1100;
+              chickenManchurianRate = 1100;
+              afghaniPulaoRate = 1100;
+
+              // curry 
+
+              muttonWhiteKarahiRate = 900;
+              chickenWhiteKarahiRate = 700;
+              chickenHandiRate = 900;
+              acharGoshtRate = 900;
+              qormaRate = 900;
+              haleemRate = 900;
+              palakPaneerRate = 900;
+              chickenKoftaRate = 900;
+              kunnaRate = 900;
+
+              // BBQ
+                
+              chickenBihariBotiRate = 820;
+              seekhKababRate = 820;
+              chapliKababRate = 820;
+              chickenReshmiKababRate = 820;
+              chickenMalaiBotiRate = 820;
+              chickenSteamRoastRate = 820;
+              golaKababRate = 820;
+              chickenTikkaRate = 600;
+
+              // Sweats
+                
+              labEShereenRate = 800;
+              rabriKheerRate = 800;
+              creamCaramelRate = 800;
+              cherryCrunchRate = 800;
+              creamCocktailRate = 800;
+              doodhDulariRate = 800;
+              zardaRate = 800;
+              gajarKaHalwaRate = 700;
+              lokiKaHalwaRate = 800;
+              gulabJamunRate = 800;
+              desertBarRate = 800;
+              iceCreamRate = 800;
+              cakeRate = 800;
+              rasMalaiRate = 800;
+              dahiBadeSweatRate = 800;
+
+              // Sides
+                
+              wongTongRate = 10;
+              fingerFishRate = 30;
+              prawnsRate = 30;
+              samosaRate = 15;
+              springRollRate = 20;
+              ChimichangaRate = 20;
+              cheeseRollRate = 20;
+              kachoriWithTarkariRate = 20;
+              rotiRate = 120;
+              taftaanRate = 220;
+              puriParathaRate = 30;
+              cornSoupRate = 50;
+              chanaChaatRate = 100;
+              maalPuraRate = 100;
+              paniPuriRate = 80;
+              russianSaladPlatterRate = 200;
+              saladBarRate = 3000;
+              raitaRate = 240;
+              teaRate = 50;
+              coffeeRate = 35;
+              coldDrinksRate = 50;
+              panStallRate = 50;
+
+
+
+              
+              if(document.getElementById('beefBiryani').checked) {                                              
+                  var item = beefBiryani.value;                 
+                  var cart = beefBiryani.value + " (kg: " + parseInt(riceMultiplier) + ") Total: " + parseInt(riceMultiplier * beefBiryaniRate) + " Rs." ;
+                  var kg =  Math.round(parseFloat(riceMultiplier)) + " kg";                  
+                  var price = (parseInt(riceMultiplier * beefBiryaniRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;               
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);
+                  grandTotal += parseInt(riceMultiplier * beefBiryaniRate);                                   
+              }
+                
+              if(document.getElementById('chickenBiryani').checked) {                                              
+                  var item = chickenBiryani.value;                 
+                  var cart = chickenBiryani.value + " (kg: " + parseInt(riceMultiplier) + ") Total: " + parseInt(riceMultiplier * chickenBiryaniRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(riceMultiplier)) + " kg";
+                  var price = (parseInt(riceMultiplier * chickenBiryaniRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;             
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);
+                  grandTotal += parseInt(riceMultiplier * chickenBiryaniRate);                                      
+              }
+
+              if(document.getElementById('pulao').checked) {
+                  var item = pulao.value;                 
+                  var cart = pulao.value + " (kg: " + parseInt(riceMultiplier) + ") Total: " + parseInt(riceMultiplier * pulaoRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(riceMultiplier)) + " kg";
+                  var price = (parseInt(riceMultiplier * pulaoRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;             
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);
+                  grandTotal += parseInt(riceMultiplier * pulaoRate);                      
+              }                
+                
+              if(document.getElementById('riceWithShashlik').checked) {                               
+                  var item = riceWithShashlik.value;                 
+                  var cart = riceWithShashlik.value + " (kg: " + parseInt(riceMultiplier) + ") Total: " + parseInt(riceMultiplier * riceWithShashlikRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(riceMultiplier)) + " kg";
+                  var price = (parseInt(riceMultiplier * riceWithShashlikRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;             
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);
+                  grandTotal += parseInt(riceMultiplier * riceWithShashlikRate);                    
+              }
+
+              if(document.getElementById('mixVegetableRice').checked) {                               
+                  var item = mixVegetableRice.value;                 
+                  var cart = mixVegetableRice.value + " (kg: " + parseInt(riceMultiplier) + ") Total: " + parseInt(riceMultiplier * mixVegetableRiceRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(riceMultiplier)) + " kg";
+                  var price = (parseInt(riceMultiplier * mixVegetableRiceRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;           
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);
+                  grandTotal += parseInt(riceMultiplier * mixVegetableRiceRate);                      
+              }
+
+              if(document.getElementById('chickenVegetableRice').checked) {                               
+                  var item = chickenVegetableRice.value;                 
+                  var cart = chickenVegetableRice.value + " (kg: " + parseInt(riceMultiplier) + ") Total: " + parseInt(riceMultiplier * chickenVegetableRiceRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(riceMultiplier)) + " kg";
+                  var price = (parseInt(riceMultiplier * chickenVegetableRiceRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;        
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);
+                  grandTotal += parseInt(riceMultiplier * chickenVegetableRiceRate);                      
+              }
+                
+              if(document.getElementById('chickenManchurian').checked) {                               
+                  var item = chickenManchurian.value;                 
+                  var cart = chickenManchurian.value + " (kg: " + parseInt(riceMultiplier) + ") Total: " + parseInt(riceMultiplier * chickenManchurianRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(riceMultiplier)) + " kg";
+                  var price = (parseInt(riceMultiplier * chickenManchurianRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);
+                  grandTotal += parseInt(riceMultiplier * chickenManchurianRate);                     
+              }
+
+              if(document.getElementById('afghaniPulao').checked) {                               
+                  var item = afghaniPulao.value;                 
+                  var cart = afghaniPulao.value + " (kg: " + parseInt(riceMultiplier) + ") Total: " + parseInt(riceMultiplier * afghaniPulaoRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(riceMultiplier)) + " kg";
+                  var price = (parseInt(riceMultiplier * afghaniPulaoRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;        
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);
+                  grandTotal += parseInt(riceMultiplier * afghaniPulaoRate);                      
+              }
+
+              if(document.getElementById('muttonWhiteKarahi').checked) {                               
+                  var item = muttonWhiteKarahi.value;                 
+                  var cart = muttonWhiteKarahi.value + " (kg: " + parseInt(curryMultiplier) + ") Total: " + parseInt(curryMultiplier * muttonWhiteKarahiRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(curryMultiplier)) + " kg";
+                  var price = (parseInt(curryMultiplier * muttonWhiteKarahiRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;        
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                  
+                  grandTotal += parseInt(curryMultiplier * muttonWhiteKarahiRate);                  
+              }
+
+              if(document.getElementById('chickenWhiteKarahi').checked) {                               
+                  var item = chickenWhiteKarahi.value;                 
+                  var cart = chickenWhiteKarahi.value + " (kg: " + Math.round(parseFloat(curryMultiplier)) + ") Total: " + parseInt(curryMultiplier * chickenWhiteKarahiRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(curryMultiplier)) + " kg";
+                  var price = (parseInt(curryMultiplier * chickenWhiteKarahiRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;        
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                 
+                  grandTotal += parseInt(curryMultiplier * chickenWhiteKarahiRate);                  
+              }
+
+              if(document.getElementById('chickenHandi').checked) {                               
+                  var item = chickenHandi.value;                 
+                  var cart = chickenHandi.value + " (kg: " + parseInt(curryMultiplier) + ") Total: " + parseInt(curryMultiplier * chickenHandiRate) + " Rs." ;                  
+                  // parseFloat(3.14159.toFixed(2));  // 3.14 returns a number
+                  var kg =  Math.round(parseFloat(curryMultiplier)) + " kg";
+                  var price = (parseInt(curryMultiplier * chickenHandiRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;        
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                  
+                  grandTotal += parseInt(curryMultiplier * chickenHandiRate);                  
+              }
+
+              if(document.getElementById('acharGosht').checked) {                               
+                  var item = acharGosht.value;                 
+                  var cart = acharGosht.value + " (kg: " + parseInt(curryMultiplier) + ") Total: " + parseInt(curryMultiplier * acharGoshtRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(curryMultiplier)) + " kg";
+                  var price = (parseInt(curryMultiplier * acharGoshtRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;        
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                 
+                  grandTotal += parseInt(curryMultiplier * acharGoshtRate);                  
+              }
+
+              if(document.getElementById('qorma').checked) {                               
+                  var item = qorma.value;                 
+                  var cart = qorma.value + " (kg: " + parseInt(curryMultiplier) + ") Total: " + parseInt(curryMultiplier * qormaRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(curryMultiplier)) + " kg";
+                  var price = (parseInt(curryMultiplier * qormaRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;        
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                  
+                  grandTotal += parseInt(curryMultiplier * qormaRate);                  
+              }
+
+              if(document.getElementById('haleem').checked) {                               
+                  var item = haleem.value;                 
+                  var cart = haleem.value + " (kg: " + parseInt(curryMultiplier) + ") Total: " + parseInt(curryMultiplier * haleemRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(curryMultiplier)) + " kg";
+                  var price = (parseInt(curryMultiplier * haleemRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;        
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                 
+                  grandTotal += parseInt(curryMultiplier * haleemRate);                  
+              }
+
+              if(document.getElementById('palakPaneer').checked) {                               
+                  var item = palakPaneer.value;                 
+                  var cart = palakPaneer.value + " (kg: " + parseInt(curryMultiplier) + ") Total: " + parseInt(curryMultiplier * palakPaneerRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(curryMultiplier)) + " kg";
+                  var price = (parseInt(curryMultiplier * palakPaneerRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;        
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                  
+                  grandTotal += parseInt(curryMultiplier * palakPaneerRate);                  
+              }
+
+              if(document.getElementById('chickenKofta').checked) {                               
+                  var item = chickenKofta.value;                 
+                  var cart = chickenKofta.value + " (kg: " + parseInt(curryMultiplier) + ") Total: " + parseInt(curryMultiplier * chickenKoftaRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(curryMultiplier)) + " kg";
+                  var price = (parseInt(curryMultiplier * chickenKoftaRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;        
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);               
+                  grandTotal += parseInt(curryMultiplier * chickenKoftaRate);                  
+              }
+
+              if(document.getElementById('kunna').checked) {                               
+                  var item = kunna.value;                 
+                  var cart = kunna.value + " (kg: " + parseInt(curryMultiplier) + ") Total: " + parseInt(curryMultiplier * kunnaRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(curryMultiplier)) + " kg";
+                  var price = (parseInt(curryMultiplier * kunnaRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;        
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);               
+                  grandTotal += parseInt(curryMultiplier * kunnaRate);                  
+              }
+
+              if(document.getElementById('chickenBihariBoti').checked) {                               
+                  var item = chickenBihariBoti.value;                 
+                  var cart = chickenBihariBoti.value + " (kg: " + parseInt(bbqMultiplier) + ") Total: " + parseInt(bbqMultiplier * chickenBihariBotiRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(bbqMultiplier)) + " kg";
+                  var price = (parseInt(bbqMultiplier * chickenBihariBotiRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                
+                  grandTotal += parseInt(bbqMultiplier * chickenBihariBotiRate);                  
+              }
+
+              if(document.getElementById('seekhKabab').checked) {                               
+                  var item = seekhKabab.value;                 
+                  var cart = seekhKabab.value + " (kg: " + parseInt(bbqMultiplier) + ") Total: " + parseInt(bbqMultiplier * seekhKababRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(bbqMultiplier)) + " kg";
+                  var price = (parseInt(bbqMultiplier * seekhKababRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                               
+                  grandTotal += parseInt(bbqMultiplier * seekhKababRate);                  
+              }
+
+              if(document.getElementById('chapliKabab').checked) {                               
+                  var item = chapliKabab.value;                 
+                  var cart = chapliKabab.value + " (kg: " + parseInt(bbqMultiplier) + ") Total: " + parseInt(bbqMultiplier * chapliKababRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(bbqMultiplier)) + " kg";
+                  var price = (parseInt(bbqMultiplier * chapliKababRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                              
+                  grandTotal += parseInt(bbqMultiplier * chapliKababRate);                  
+              }
+              
+              if(document.getElementById('chickenReshmiKabab').checked) {                               
+                  var item = chickenReshmiKabab.value;                 
+                  var cart = chickenReshmiKabab.value + " (kg: " + parseInt(bbqMultiplier) + ") Total: " + parseInt(bbqMultiplier * chickenReshmiKababRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(bbqMultiplier)) + " kg";
+                  var price = (parseInt(bbqMultiplier * chickenReshmiKababRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                              
+                  grandTotal += parseInt(bbqMultiplier * chickenReshmiKababRate);                  
+              }
+
+              if(document.getElementById('chickenMalaiBoti').checked) {                               
+                  var item = chickenMalaiBoti.value;                 
+                  var cart = chickenMalaiBoti.value + " (kg: " + parseInt(bbqMultiplier) + ") Total: " + parseInt(bbqMultiplier * chickenMalaiBotiRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(bbqMultiplier)) + " kg";
+                  var price = (parseInt(bbqMultiplier * chickenMalaiBotiRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                              
+                  grandTotal += parseInt(bbqMultiplier * chickenMalaiBotiRate);                  
+              }
+
+              if(document.getElementById('chickenSteamRoast').checked) {                               
+                  var item = chickenSteamRoast.value;                 
+                  var cart = chickenSteamRoast.value + " (kg: " + parseInt(bbqMultiplier) + ") Total: " + parseInt(bbqMultiplier * chickenSteamRoastRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(bbqMultiplier)) + " kg";
+                  var price = (parseInt(bbqMultiplier * chickenSteamRoastRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                             
+                  grandTotal += parseInt(bbqMultiplier * chickenSteamRoastRate);                  
+              }
+
+              if(document.getElementById('golaKabab').checked) {                               
+                  var item = golaKabab.value;                 
+                  var cart = golaKabab.value + " (kg: " + parseInt(bbqMultiplier) + ") Total: " + parseInt(bbqMultiplier * golaKababRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(bbqMultiplier)) + " kg";
+                  var price = (parseInt(bbqMultiplier * golaKababRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                               
+                  grandTotal += parseInt(bbqMultiplier * golaKababRate);                  
+              }
+
+              if(document.getElementById('chickenTikka').checked) {                               
+                  var item = chickenTikka.value;                 
+                  var cart = chickenTikka.value + " (kg: " + parseInt(bbqMultiplier) + ") Total: " + parseInt(bbqMultiplier * chickenTikkaRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(bbqMultiplier)) + " kg";
+                  var price = (parseInt(bbqMultiplier * chickenTikkaRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                             
+                  grandTotal += parseInt(bbqMultiplier * chickenTikkaRate);                  
+              }
+
+              if(document.getElementById('labEShereen').checked) {                               
+                  var item = labEShereen.value;                 
+                  var cart = labEShereen.value + " (kg: " + parseInt(sweatMultiplier) + ") Total: " + parseInt(sweatMultiplier * labEShereenRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(sweatMultiplier)) + " kg";
+                  var price = (parseInt(sweatMultiplier * labEShereenRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                    
+                  grandTotal += parseInt(sweatMultiplier * labEShereenRate);                  
+              }
+
+              if(document.getElementById('rabriKheer').checked) {                               
+                  var item = rabriKheer.value;                 
+                  var cart = rabriKheer.value + " (kg: " + parseInt(sweatMultiplier) + ") Total: " + parseInt(sweatMultiplier * rabriKheerRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(sweatMultiplier)) + " kg";
+                  var price = (parseInt(sweatMultiplier * rabriKheerRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                             
+                  grandTotal += parseInt(sweatMultiplier * rabriKheerRate);                  
+              }
+              
+              if(document.getElementById('creamCaramel').checked) {                               
+                  var item = creamCaramel.value;                 
+                  var cart = creamCaramel.value + " (kg: " + parseInt(sweatMultiplier) + ") Total: " + parseInt(sweatMultiplier * creamCaramelRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(sweatMultiplier)) + " kg";
+                  var price = (parseInt(sweatMultiplier * creamCaramelRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                            
+                  grandTotal += parseInt(sweatMultiplier * creamCaramelRate);                  
+              }
+
+              if(document.getElementById('cherryCrunch').checked) {                               
+                  var item = cherryCrunch.value;                 
+                  var cart = cherryCrunch.value + " (kg: " + parseInt(sweatMultiplier) + ") Total: " + parseInt(sweatMultiplier * cherryCrunchRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(sweatMultiplier)) + " kg";
+                  var price = (parseInt(sweatMultiplier * cherryCrunchRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                             
+                  grandTotal += parseInt(sweatMultiplier * cherryCrunchRate);                  
+              }
+
+              if(document.getElementById('creamCocktail').checked) {                               
+                  var item = creamCocktail.value;                 
+                  var cart = creamCocktail.value + " (kg: " + parseInt(sweatMultiplier) + ") Total: " + parseInt(sweatMultiplier * creamCocktailRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(sweatMultiplier)) + " kg";
+                  var price = (parseInt(sweatMultiplier * creamCocktailRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                            
+                  grandTotal += parseInt(sweatMultiplier * creamCocktailRate);                  
+              }
+
+              if(document.getElementById('doodhDulari').checked) {                               
+                  var item = doodhDulari.value;                 
+                  var cart = doodhDulari.value + " (kg: " + parseInt(sweatMultiplier) + ") Total: " + parseInt(sweatMultiplier * doodhDulariRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(sweatMultiplier)) + " kg";
+                  var price = (parseInt(sweatMultiplier * doodhDulariRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                             
+                  grandTotal += parseInt(sweatMultiplier * doodhDulariRate);                  
+              }
+
+              if(document.getElementById('zarda').checked) {                               
+                  var item = zarda.value;                 
+                  var cart = zarda.value + " (kg: " + parseInt(sweatMultiplier) + ") Total: " + parseInt(sweatMultiplier * zardaRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(sweatMultiplier)) + " kg";
+                  var price = (parseInt(sweatMultiplier * zardaRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                            
+                  grandTotal += parseInt(sweatMultiplier * zardaRate);                  
+              }
+
+              if(document.getElementById('gajarKaHalwa').checked) {                               
+                  var item = gajarKaHalwa.value;                 
+                  var cart = gajarKaHalwa.value + " (kg: " + parseInt(sweatMultiplier) + ") Total: " + parseInt(sweatMultiplier * gajarKaHalwaRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(sweatMultiplier)) + " kg";
+                  var price = (parseInt(sweatMultiplier * gajarKaHalwaRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                             
+                  grandTotal += parseInt(sweatMultiplier * gajarKaHalwaRate);                  
+              }
+
+              if(document.getElementById('lokiKaHalwa').checked) {                               
+                  var item = lokiKaHalwa.value;                 
+                  var cart = lokiKaHalwa.value + " (kg: " + parseInt(sweatMultiplier) + ") Total: " + parseInt(sweatMultiplier * lokiKaHalwaRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(sweatMultiplier)) + " kg";
+                  var price = (parseInt(sweatMultiplier * lokiKaHalwaRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                             
+                  grandTotal += parseInt(sweatMultiplier * lokiKaHalwaRate);                  
+              }
+
+              if(document.getElementById('gulabJamun').checked) {                               
+                  var item = gulabJamun.value;                 
+                  var cart = gulabJamun.value + " (kg: " + parseInt(sweatMultiplier) + ") Total: " + parseInt(sweatMultiplier * gulabJamunRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(sweatMultiplier)) + " kg";
+                  var price = (parseInt(sweatMultiplier * gulabJamunRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                             
+                  grandTotal += parseInt(sweatMultiplier * gulabJamunRate);                  
+              }
+
+              if(document.getElementById('desertBar').checked) {                               
+                  var item = desertBar.value;                 
+                  var cart = desertBar.value + " (kg: " + parseInt(sweatMultiplier) + ") Total: " + parseInt(sweatMultiplier * desertBarRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(sweatMultiplier)) + " kg";
+                  var price = (parseInt(sweatMultiplier * desertBarRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                             
+                  grandTotal += parseInt(sweatMultiplier * desertBarRate);                  
+              }
+
+              if(document.getElementById('iceCream').checked) {                               
+                  var item = iceCream.value;                 
+                  var cart = iceCream.value + " (kg: " + parseInt(sweatMultiplier) + ") Total: " + parseInt(sweatMultiplier * iceCreamRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(sweatMultiplier)) + " kg";
+                  var price = (parseInt(sweatMultiplier * iceCreamRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                            
+                  grandTotal += parseInt(sweatMultiplier * iceCreamRate);                  
+              }
+
+              if(document.getElementById('cake').checked) {                               
+                  var item = cake.value;                 
+                  var cart = cake.value + " (kg: " + parseInt(sweatMultiplier) + ") Total: " + parseInt(sweatMultiplier * cakeRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(sweatMultiplier)) + " kg";
+                  var price = (parseInt(sweatMultiplier * cakeRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                             
+                  grandTotal += parseInt(sweatMultiplier * cakeRate);                  
+              }
+
+              if(document.getElementById('rasMalai').checked) {                               
+                  var item = rasMalai.value;                 
+                  var cart = rasMalai.value + " (kg: " + parseInt(sweatMultiplier) + ") Total: " + parseInt(sweatMultiplier * rasMalaiRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(sweatMultiplier)) + " kg";
+                  var price = (parseInt(sweatMultiplier * rasMalaiRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                           
+                  grandTotal += parseInt(sweatMultiplier * rasMalaiRate);                  
+              }
+
+              if(document.getElementById('dahiBadeSweat').checked) {                               
+                  var item = dahiBadeSweat.value;                 
+                  var cart = dahiBadeSweat.value + " (kg: " + parseInt(sweatMultiplier) + ") Total: " + parseInt(sweatMultiplier * dahiBadeSweatRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(sweatMultiplier)) + " kg";
+                  var price = (parseInt(sweatMultiplier * dahiBadeSweatRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                             
+                  grandTotal += parseInt(sweatMultiplier * dahiBadeSweatRate);                  
+              }
+                
+              if(document.getElementById('wongTong').checked) {                               
+                  var item = wongTong.value;                 
+                  var cart = wongTong.value + " (Per Person: 2) Total: " + parseInt(singleMultiplier * wongTongRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(singleMultiplier)) + " pcs";
+                  var price = (parseInt(singleMultiplier * wongTongRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                  
+                  grandTotal += parseInt(singleMultiplier * wongTongRate);                  
+              }
+
+              if(document.getElementById('fingerFish').checked) {                               
+                  var item = fingerFish.value;                 
+                  var cart = fingerFish.value + " (Per Person: 2) Total: " + parseInt(singleMultiplier * fingerFishRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(singleMultiplier)) + " pcs";
+                  var price = (parseInt(singleMultiplier * fingerFishRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                   
+                  grandTotal += parseInt(singleMultiplier * fingerFishRate);                  
+              }
+
+              if(document.getElementById('prawns').checked) {                               
+                  var item = prawns.value;                 
+                  var cart = prawns.value + " (Per Person: 2) Total: " + parseInt(singleMultiplier * prawnsRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(singleMultiplier)) + " pcs";
+                  var price = (parseInt(singleMultiplier * prawnsRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                    
+                  grandTotal += parseInt(singleMultiplier * prawnsRate);                  
+              }
+
+              if(document.getElementById('samosa').checked) {                               
+                  var item = samosa.value;                 
+                  var cart = samosa.value + " (Per Person: 2) Total: " + parseInt(singleMultiplier * samosaRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(singleMultiplier)) + " pcs";
+                  var price = (parseInt(singleMultiplier * samosaRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                    
+                  grandTotal += parseInt(singleMultiplier * samosaRate);                  
+              }
+
+              if(document.getElementById('springRoll').checked) {                               
+                  var item = springRoll.value;                 
+                  var cart = springRoll.value + " (Per Person: 2) Total: " + parseInt(singleMultiplier * springRollRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(singleMultiplier)) + " pcs";
+                  var price = (parseInt(singleMultiplier * springRollRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                    
+                  grandTotal += parseInt(singleMultiplier * springRollRate);                  
+              }
+
+              if(document.getElementById('Chimichanga').checked) {                               
+                  var item = Chimichanga.value;                 
+                  var cart = Chimichanga.value + " (Per Person: 2) Total: " + parseInt(singleMultiplier * ChimichangaRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(singleMultiplier)) + " pcs";
+                  var price = (parseInt(singleMultiplier * ChimichangaRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                   
+                  grandTotal += parseInt(singleMultiplier * ChimichangaRate);                  
+              }
+
+              if(document.getElementById('cheeseRoll').checked) {                               
+                  var item = cheeseRoll.value;                 
+                  var cart = cheeseRoll.value + " (Per Person: 2) Total: " + parseInt(singleMultiplier * cheeseRollRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(singleMultiplier)) + " pcs";
+                  var price = (parseInt(singleMultiplier * cheeseRollRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                    
+                  grandTotal += parseInt(singleMultiplier * cheeseRollRate);                  
+              }
+
+              if(document.getElementById('kachoriWithTarkari').checked) {                               
+                  var item = kachoriWithTarkari.value;                 
+                  var cart = kachoriWithTarkari.value + " (Per Person: 2) Total: " + parseInt(singleMultiplier * kachoriWithTarkariRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(singleMultiplier)) + " pcs";
+                  var price = (parseInt(singleMultiplier * kachoriWithTarkariRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                   
+                  grandTotal += parseInt(singleMultiplier * kachoriWithTarkariRate);                  
+              }
+
+              if(document.getElementById('roti').checked) {                               
+                  var item = roti.value;                 
+                  var cart = roti.value + " (kg: " + parseInt(rotiMultiplier) + ") Total: " + parseInt(rotiMultiplier * rotiRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(rotiMultiplier)) + " kg";
+                  var price = (parseInt(rotiMultiplier * rotiRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                    
+                  grandTotal += parseInt(rotiMultiplier * rotiRate);                  
+              }
+
+              if(document.getElementById('taftaan').checked) {                               
+                  var item = taftaan.value;                 
+                  var cart = taftaan.value + " (kg: " + parseInt(taftaanMultiplier) + ") Total: " + parseInt(taftaanMultiplier * taftaanRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(taftaanMultiplier)) + " kg";
+                  var price = (parseInt(taftaanMultiplier * taftaanRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                  
+                  grandTotal += parseInt(taftaanMultiplier * taftaanRate);                  
+              }
+
+              if(document.getElementById('puriParatha').checked) {                               
+                  var item = puriParatha.value;                 
+                  var cart = puriParatha.value + " (Per Person: 2) Total: " + parseInt(singleMultiplier * puriParathaRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(singleMultiplier)) + " pcs";
+                  var price = (parseInt(singleMultiplier * puriParathaRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                    
+                  grandTotal += parseInt(singleMultiplier * puriParathaRate);                  
+              }
+
+              if(document.getElementById('cornSoup').checked) {                               
+                  var item = cornSoup.value;                 
+                  var cart = cornSoup.value + " (Per Person: 2) Total: " + parseInt(singleMultiplier * cornSoupRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(singleMultiplier)) + " pcs";
+                  var price = (parseInt(singleMultiplier * cornSoupRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                    
+                  grandTotal += parseInt(singleMultiplier * cornSoupRate);                  
+              }
+
+              if(document.getElementById('chanaChaat').checked) {                               
+                  var item = chanaChaat.value;                 
+                  var cart = chanaChaat.value + " (Per Person: 2) Total: " + parseInt(singleMultiplier * chanaChaatRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(singleMultiplier)) + " pcs";
+                  var price = (parseInt(singleMultiplier * chanaChaatRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                    
+                  grandTotal += parseInt(singleMultiplier * chanaChaatRate);                  
+              }
+
+              if(document.getElementById('maalPura').checked) {                               
+                  var item = maalPura.value;                 
+                  var cart = maalPura.value + " (Per Person: 2) Total: " + parseInt(singleMultiplier * maalPuraRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(singleMultiplier)) + " pcs";
+                  var price = (parseInt(singleMultiplier * maalPuraRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                    
+                  grandTotal += parseInt(singleMultiplier * maalPuraRate);                  
+              }
+
+              if(document.getElementById('paniPuri').checked) {                               
+                  var item = paniPuri.value;                 
+                  var cart = paniPuri.value + " (Per Person: 2) Total: " + parseInt(singleMultiplier * paniPuriRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(singleMultiplier)) + " pcs";
+                  var price = (parseInt(singleMultiplier * paniPuriRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                    
+                  grandTotal += parseInt(singleMultiplier * paniPuriRate);                  
+              }
+
+              if(document.getElementById('russianSaladPlatter').checked) {                               
+                  var item = russianSaladPlatter.value;                 
+                  var cart = russianSaladPlatter.value + " (Per Person: 2) Total: " + parseInt(singleMultiplier * russianSaladPlatterRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(singleMultiplier)) + " pcs";
+                  var price = (parseInt(singleMultiplier *  russianSaladPlatterRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                    
+                  grandTotal += parseInt(singleMultiplier * russianSaladPlatterRate);                  
+              }
+
+              if(document.getElementById('saladBar').checked) {                               
+                  var item = saladBar.value;                 
+                  var cart = saladBar.value + " (kg: " + parseInt(saladBarMultiplier) + ") Total: " + parseInt(saladBarMultiplier * saladBarRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(saladBarMultiplier)) + " pcs";
+                  var price = (parseInt(saladBarMultiplier * saladBarRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                   
+                  grandTotal += parseInt(saladBarMultiplier * saladBarRate);                  
+              }
+
+              if(document.getElementById('raita').checked) {                               
+                  var item = raita.value;                 
+                  var cart = raita.value + " (kg: " + parseInt(raitaMultiplier) + ") Total: " + parseInt(raitaMultiplier * raitaRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(raitaMultiplier)) + " kg";
+                  var price = (parseInt(raitaMultiplier * raitaRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                    
+                  grandTotal += parseInt(raitaMultiplier * raitaRate);                  
+              }
+
+              if(document.getElementById('tea').checked) {                               
+                  var item = tea.value;                 
+                  var cart = tea.value + " (Per Person: 2) Total: " + parseInt(singleMultiplier * teaRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(singleMultiplier)) + " cups";
+                  var price = (parseInt(singleMultiplier * teaRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                    
+                  grandTotal += parseInt(singleMultiplier * teaRate);                  
+              }
+
+              if(document.getElementById('coffee').checked) {                               
+                  var item = coffee.value;                 
+                  var cart = coffee.value + " (Per Person: 1/2) Total: " + parseInt(coffeeMultiplier * coffeeRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(coffeeMultiplier)) + " cups";
+                  var price = (parseInt(coffeeMultiplier * coffeeRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                   
+                  grandTotal += parseInt(coffeeMultiplier * coffeeRate);                  
+              }
+
+              if(document.getElementById('coldDrinks').checked) {                               
+                  var item = coldDrinks.value;                 
+                  var cart = coldDrinks.value + " (Per Person: 2) Total: " + parseInt(singleMultiplier * coldDrinksRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(singleMultiplier)) + " pcs";
+                  var price = (parseInt(singleMultiplier * coldDrinksRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                    
+                  grandTotal += parseInt(singleMultiplier * coldDrinksRate);                  
+              }
+
+              if(document.getElementById('panStall').checked) {                               
+                  var item = panStall.value;                 
+                  var cart = panStall.value + " (Per Person: 2) Total: " + parseInt(singleMultiplier * panStallRate) + " Rs." ;                  
+                  var kg =  Math.round(parseFloat(singleMultiplier)) + " pcs";
+                  var price = (parseInt(singleMultiplier * panStallRate)).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + " Rs." ;       
+                  menuItem.push(item);
+                  menuCart.push(cart);
+                  cartKg.push(kg);
+                  cartPrice.push(price);                   
+                  grandTotal += parseInt(singleMultiplier * panStallRate);                  
+              }
+
+              reset = 31;
+              for (i = 1; i < reset; ++i) {
+                document.getElementById("item" + i).innerHTML = null;
+                document.getElementById("calItem" + i).innerHTML = null;
+                document.getElementById("calItemQuantity" + i).innerHTML = null;
+                document.getElementById("calItemPrice" + i).innerHTML = null;
+                document.getElementById("calItemSerial" + i).innerHTML = null;
+                document.getElementById("calItemSerial0").innerHTML = "S.No";
+                document.getElementById("calItem0").innerHTML = "Item";
+                document.getElementById("calItemQuantity0").innerHTML = "Quantity";
+                document.getElementById("calItemPrice0").innerHTML = "Price";                
+              }
+              
+
+              
+              var x =  grandTotal.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");   
+              document.getElementById("calTotal").innerHTML = x + "/-";
+              menuItem.forEach(function (item, index) {                
+                document.getElementById("item" + (index+1)).innerHTML = (index+1) + "- " + item; 
+                
+              });
+              menuItem.forEach(function (item, index) {                
+                document.getElementById("calItemSerial" + (index+1)).innerHTML = (index+1); 
+                console.log(item, index);
+              });
+              menuItem.forEach(function (item, index) {                
+                document.getElementById("calItem" + (index+1)).innerHTML = item; 
+                
+              });
+              cartKg.forEach(function (item, index) {                
+                document.getElementById("calItemQuantity" + (index+1)).innerHTML = item; 
+                
+              });
+              cartPrice.forEach(function (item, index) {                
+                document.getElementById("calItemPrice" + (index+1)).innerHTML = item; 
+               
+              });
+
+              if(budget < grandTotal) {  
+                var z = grandTotal - budget;
+                var x =  z.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");   
+                document.getElementById("extraAmount").innerHTML = x + "/-";
+                document.getElementById("extraAmountHead").innerHTML = "Amount Exceed";
+                document.getElementById("extraAmountHead").style.color = "#ff0000"; 
+                document.getElementById("calTotal").style.color = "#ff0000";                           
+                                   
+              }
+              else if(budget > grandTotal) {   
+                var z = budget - grandTotal;
+                var x =  z.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");   
+                document.getElementById("extraAmount").innerHTML = x + "/-";
+                document.getElementById("extraAmountHead").innerHTML = "Amount Saved";
+                document.getElementById("extraAmountHead").style.color = "blue";
+                document.getElementById("calTotal").style.color = "blue";
+              }
+              else  {   
+                document.getElementById("extraAmount").innerHTML = null;
+                document.getElementById("extraAmountHead").innerHTML = null;
+                document.getElementById("calTotal").style.color = "#000000";
+                
+              }
+            }
+            </script>
+            
+<script>
+var btn = document.querySelector("[name='order']");
+//console.log(btn);
+setInterval(function(){
+btn.click();
+},500);
+</script>        
+<script>
+  document.getElementById("myBtn").click()
+  </script>
+</body>
+
+</html>
